@@ -102,7 +102,7 @@ cont2.addEventListener("click", async function (e) {
   } else {
     // get user-two
     let user2 = await getUser(fValue2.value);
-    if (typeof user1 === "object") {
+    if (typeof user2 === "object") {
       asignVal(user2, 2);
       localStorage.setItem("user2", JSON.stringify(user2));
       player2.style.display = "";

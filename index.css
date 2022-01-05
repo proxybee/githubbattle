@@ -146,7 +146,7 @@ input[type=text] {
 .card-content {
     box-sizing: border-box;
     font-family: 'Jost', sans-serif;
-    max-width: 350px;
+    width: 370px;
     max-height: 650px;
     text-align: center;
     padding: 30px 15px;

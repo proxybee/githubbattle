@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Contest</title>
+</head>
+<body>
+    <div class=loadingCont><div class="loading center">Loading</div></div>
+    <!-- <h2 class="header">Players</h2> -->
+    <div class="main center">
+    <div class="p-forms">
+        <div class="form-1">
+        <h3>Player One</h3>
+        <form autocomplete="off" id="p2-form">
+        <div>
+            <input type="text" id="user1" placeholder="Enter Git Username1" required/>
+        </div>
+        <div><button id="cont1-btn">Continue</button></div>
+        </form>
+        </div>
+        <!-- <div id="result" style="display: block"></div>
+        <div id="bat"></div> -->
+        <div class="form-2 hideClass">
+        <h3>Player Two</h3>
+        <form autocomplete="off" id="p1-form">
+        <div>
+            <input type="text" id="user2" placeholder="Enter Git Username2" required />
+        </div>
+        <!-- <button id="res-btn" onClick="window.location.reload();">Reselect Players1</button> -->
+        <button id="back-btn">Back</button>
+        <button id="cont2-btn">Continue</button>
+        </form>
+        <!-- <div id="result" style="display: block"></div>
+        <div id="bat"></div> -->
+    </div>
+    </div>
+    <div class="container">
+        <div class="results-container">
+            <!-- change to Result when score is calculated -->
+            <!-- <h1 id="confirm">Confirm Players</h1> -->
+        <div id="results" class="results grid centered container-sm">
+         <div class="card-content top-content user-card player-1" style="display: none;">
+            <div class="user-result1">Player 1</div>
+            <h2 class="info-1 hideClass">35</h2>
+            <div class="user-image-container">
+                    <img src="" alt="User1" class="user-image">
+                </div>
+                <div class="user-info">
+                    <ul class="column pad-md">
+                <li class="user-info-1 result-det">
+                            <div class="user-inf-desc pname medium"></div>
+                            <span class="user-info-text small">NAME</span>
+                        </li>
+                        <li class="user-info-2 result-det">
+                            <div class="user-inf-desc username medium"></div>
+                            <span class="user-info-text small">USERNAME</span>
+                        </li>
+                        <li class="user-info-3 result-det">
+                            <div class="user-inf-desc location medium"></div>
+                            <span class="user-info-text small">LOCATION</span>
+                        </li>
+                        <li class="user-info-4 result-det">
+                            <div class="user-inf-desc followers medium"></div>
+                            <span class="user-info-text small">FOLLOWERS</span>
+                        </li>
+                        <li class="user-info-5 result-det">
+                            <div class="user-inf-desc following medium"></div>
+                            <span class="user-info-text small">FOLLOWING</span>
+                        </li>
+                         <li class="user-info-6 result-det">
+                            <div class="user-inf-desc repos medium"></div>
+                            <span class="user-info-text small">PUBLIC REPOS</span>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+                <div class=" card-content top-content user-card player-2" style="display: none;">
+                    <div class="user-result2">Player 2</div>
+                    <h2 class="info-2 hideClass"></h2>
+                    <div class="user-image-container">
+                            <img src="" alt="" class="user-image userimg">
+              
+                        </div>
+                        <div class="user-info">
+                            <ul class="column pad-md">
+                                <li class="user-info-1 result-det">
+                                    <div class="user-inf-desc pname1 medium"></div>
+                                    <span class="user-info-text small">NAME</span>
+                                </li>
+                                <li class="user-info-2 result-det">
+                                    <div class="user-inf-desc username1 medium"></div>
+                                    <span class="user-info-text small">USERNAME</span>
+                                </li>
+                        
+                                <li class="user-info-3 result-det">
+                                    <div class="user-inf-desc location1 medium"></div>
+                                    <span class="user-info-text small">LOCATION</span>
+                                </li>
+                                <li class="user-info-4 result-det">
+                                    <div class="user-inf-desc followers1 medium"></div>
+                                    <span class="user-info-text small">FOLLOWERS</span>
+                                </li>
+                                <li class="user-info-5 result-det">
+                                    <div class="user-inf-desc following1 medium"></div>
+                                    <span class="user-info-text small">FOLLOWING</span>
+                                </li>
+                                 <li class="user-info-6 result-det">
+                                    <div class="user-inf-desc repos1 medium"></div>
+                                    <span class="user-info-text small">PUBLIC REPOS</span>
+                                </li>
+                            </ul>
+                        </div>
+                        </div>
+            </div>
+            <div class="initiate-btn center hideClass" id="init-btn">
+            <button onClick="localStorage.clear(); window.location.reload();" style="display: inline-block;">Reselect Players</button>
+            <button id="btn-initiate" style="display: inline-block;">Initiate Battle</button>
+            <button onClick="localStorage.clear();" id="btn-reset" style="display: inline-block;"><a href="index.html">Start Over</a></button>
+            </div>
+       
+        
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+    
+</body>
+</html>
